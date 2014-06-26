@@ -32,6 +32,10 @@ class FooBarFormController extends ContentEntityForm {
             '#default_value' => $entity->getUntranslated()->language()->id,
             '#languages' => Language::STATE_ALL,
         );
+        $form['type'] = array(
+            '#type' => 'hidden',
+            '#default_value' => $entity->getEntityTypeId(),
+        );
         return $form;
     }
     /**
