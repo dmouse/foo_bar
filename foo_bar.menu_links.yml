@@ -1,0 +1,5 @@
+foo_bar.admin_display:
+  title: 'Foo Bar Entity'
+  parent: system.admin_structure
+  description: 'Configure foo bar entity'
+  route_name: foo_bar.settings
