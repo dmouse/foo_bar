@@ -5,6 +5,7 @@
  */
 namespace Drupal\foo_bar\Entity\Form;
 use Drupal\Core\Entity\ContentEntityConfirmFormBase;
+use Drupal\Core\Url;
 /**
  * Provides a form for deleting a foo_bar entity.
  */
@@ -19,9 +20,7 @@ class FooBarDeleteForm extends ContentEntityConfirmFormBase {
      * {@inheritdoc}
      */
     public function getCancelRoute() {
-        return array(
-            'route_name' => 'foo_bar.list',
-        );
+        return new Url('foo_bar.list');
     }
     /**
      * {@inheritdoc}
