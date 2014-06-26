@@ -4,12 +4,12 @@
  * Definition of Drupal\foo_bar\Entity\Form\FooBarFormController.
  */
 namespace Drupal\foo_bar\Entity\Form;
-use Drupal\Core\Entity\ContentEntityFormController;
+use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Language\Language;
 /**
  * Form controller for the foo_bar entity edit forms.
  */
-class FooBarFormController extends ContentEntityFormController {
+class FooBarFormController extends ContentEntityForm {
     /**
      * Overrides Drupal\Core\Entity\EntityFormController::form().
      */
