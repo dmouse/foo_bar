@@ -17,7 +17,7 @@ use Drupal\Core\Entity\EntityTypeInterface;
  *   label = @Translation("FooBar entity"),
  *   controllers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list" = "Drupal\foo_bar\Entity\Controller\FooBarListController",
+ *     "list_builder" = "Drupal\foo_bar\Entity\Controller\FooBarListBuilder",
  *
  *     "form" = {
  *       "add" = "Drupal\foo_bar\Entity\Form\FooBarFormController",
