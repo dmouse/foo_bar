@@ -1,0 +1,6 @@
+services:
+  paramconverter.foo_bar:
+    class: Drupal\foo_bar\ParamConverter\FooBarParamConverter
+    arguments: ['@entity.manager']
+    tags:
+      - { name: paramconverter, priority: 10 }
